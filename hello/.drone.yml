@@ -1,0 +1,13 @@
+kind: pipeline
+type: docker
+name: sbt_hello_world
+
+steps:
+- name: en
+  image: 1science/sbt
+  commands:
+  - echo "Running within the runner"
+  - hostname 
+  - date
+  - echo ==========================
+  - sbt run

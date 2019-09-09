@@ -1,0 +1,11 @@
+kind: pipeline
+name: sbt_hello_world
+
+steps:
+- name: en
+  image: 1science/sbt
+  commands:
+  - echo "Running within the runner"
+  - hostname 
+  - date
+  - sbt run
