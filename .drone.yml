@@ -10,4 +10,5 @@ steps:
   - hostname 
   - date
   - echo ==========================
+  - cd hello
   - sbt run
